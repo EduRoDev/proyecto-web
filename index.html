@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flora departamento de Bolivar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body class="font-sans">
+    <header class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-green-700">ECOS</div>
+                <div class="flex-grow max-w-xl mx-4">
+                    <div class="relative">
+                        <input type="search" id="searchInput" placeholder="Buscar..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <button type="button" id="searchButton" class="absolute right-3 top-1/2 transform -translate-y-1/2">
+                        </button>
+                    </div>
+                </div>
+                <nav class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Comunidad</a>
+                    <a href="#" class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">Inicio</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">
+            Flora del departamento de Bolivar
+        </h1>
+
+        <div class="mb-8">
+            <div class="relative">
+                <div class="overflow-hidden relative h-64 md:h-96 rounded-lg">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+                        <div class="flex-none w-full">
+                            <img src="/images/carrusel/Carrusel_1.jpeg" alt="Flora de Bolivar 1"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <div class="flex-none w-full">
+                            <img src="/images/carrusel/Carrusel_2.jpeg" alt="Flora de Bolivar 2"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <div class="flex-none w-full">
+                            <img src="/images/carrusel/Carrusel_3.jpeg" alt="Flora de Bolivar 3"
+                                class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mx-auto px-4 py-8">
+            <div id="searchResults" class="mb-4 text-green-600 font-semibold hidden"></div>
+            <div id="plantas" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 ">
+                <!-- Clavellino -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/Clavellino.jpg" alt="Clavellino" class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Clavellino</h3>
+                        <p class="text-gray-600 italic">(Caesalpinia pulcherrima)</p>
+                    </div>
+                </div>
+
+                <!-- Totumo -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/totumo.jpg" alt="Totumo" class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Totumo</h3>
+                        <p class="text-gray-600 italic">(Crescentia cujete)</p>
+                    </div>
+                </div>
+
+                <!-- Uvero -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/uvero.jpg" alt="Uvero" class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Uvero</h3>
+                        <p class="text-gray-600 italic">(Coccoloba uvifera)</p>
+                    </div>
+                </div>
+
+                <!-- Ginger -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/ginger.jpg" alt="Ginger" class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Ginger</h3>
+                        <p class="text-gray-600 italic">(Alpinia purpurata)</p>
+                    </div>
+                </div>
+
+                <!-- Almendro Malabar -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/almendro-malabar.jpeg" alt="Almendro Malabar"
+                            class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Almendro Malabar</h3>
+                        <p class="text-gray-600 italic">(Terminalia catappa)</p>
+                    </div>
+                </div>
+
+                <!-- Estrellita -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/Estrellita.jpg" alt="Estrellita" class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Estrellita</h3>
+                        <p class="text-gray-600 italic">(Hypobroma longiflora)</p>
+                    </div>
+                </div>
+
+                <!-- Ceiba Tronadora -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/ceiba_tronadora.jpeg" alt="Ceiba Tronadora"
+                            class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Ceiba Tronadora</h3>
+                        <p class="text-gray-600 italic">(Hura crepitans)</p>
+                    </div>
+                </div>
+
+                <!-- Segunda fila -->
+                <!-- Cocotero -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/Cocotero.jpg" alt="Cocotero" class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Cocotero</h3>
+                        <p class="text-gray-600 italic">(Cocos nucifera)</p>
+                    </div>
+                </div>
+
+                <!-- Mango -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/Mango.jpeg" alt="Mango" class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Mango</h3>
+                        <p class="text-gray-600 italic">(Mangifera indica)</p>
+                    </div>
+                </div>
+
+                <!-- Matarratón -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/matarraton.jpg" alt="Matarratón" class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Matarratón</h3>
+                        <p class="text-gray-600 italic">(Gliricidia sepium)</p>
+                    </div>
+                </div>
+
+                <!-- Clavellino de Madagascar -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/clavellino_madagascar.jpeg" alt="Clavellino de Madagascar"
+                            class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">
+                            Clavellino de Madagascar
+                        </h3>
+                        <p class="text-gray-600 italic">(Delonix regia)</p>
+                    </div>
+                </div>
+
+                <!-- Guamacho -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/guamacho.jpg" alt="Guamacho" class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Guamacho</h3>
+                        <p class="text-gray-600 italic">(Leuenbergeria guamacho)</p>
+                    </div>
+                </div>
+
+                <!-- Azucena de Agua -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/azucena_agua.jpeg" alt="Azucena de Agua" class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Azucena de Agua</h3>
+                        <p class="text-gray-600 italic">(Hymenocallis littoralis)</p>
+                    </div>
+                </div>
+
+                <!-- Mangle Colorado -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/mangle_colorado.jpg" alt="Mangle Colorado"
+                            class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Mangle Colorado</h3>
+                        <p class="text-gray-600 italic">(Rhizophora mangle)</p>
+                    </div>
+                </div>
+
+                <!-- Neem de la india -->
+                <!-- TercercaColumna -->
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/Neem.jpg" alt="Neem de la india"
+                            class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Neem de la india</h3>
+                        <p class="text-gray-600 italic">(Azadirachta indica)</p>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/algodoncillo_gigante.jpg" alt="Algodoncillo Gigante"
+                            class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Algodoncillo Gigante</h3>
+                        <p class="text-gray-600 italic">(Hymenocallis gigantea)</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/iraca.jpg" alt="Iráca"
+                            class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Iraca</h3>
+                        <p class="text-gray-600 italic">(Carludovica palmata)</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/papaya.jpeg" alt="Papaya"
+                            class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Papaya</h3>
+                        <p class="text-gray-600 italic">(Carica papaya)</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                    <img src="/images/guacimo.jpeg" alt="Guacimo"
+                        class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Guacimo</h3>
+                        <p class="text-gray-600 italic">(Guazama ulmifolia)</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                    <img src="/images/mangle_botoncillo.jpeg" alt="Mangle Botoncillo"
+                        class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Mangle Botoncillo</h3>
+                        <p class="text-gray-600 italic">(Conocarpus erectus)</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-2">
+                        <img src="/images/clemon.jpeg" alt="Clemón"
+                            class="w-full h-full object-cover hover:scale-110" />
+                    </div>
+                    <div class="text-sm">
+                        <h3 class="font-semibold text-green-800">Clemón</h3>
+                        <p class="text-gray-600 italic">(Thespesia populnea)</p>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-green-500 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="space-y-2">
+                    <a href="#" class="block hover:underline">Acerca de</a>
+                    <a href="#" class="block hover:underline">Ayuda</a>
+                    <a href="#" class="block hover:underline">Directrices de la comunidad</a>
+                </div>
+                <div class="space-y-2">
+                    <a href="#" class="block hover:underline">Retroalimentación</a>
+                    <a href="#" class="block hover:underline">Trabajo</a>
+                </div>
+                <div class="text-2xl font-bold">ECOS</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/animations/Carrusel.js"></script>
+<script src="js/buscador.js"></script>
+</html>
