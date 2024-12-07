@@ -13,9 +13,9 @@ El proyecto web utiliza HTML, CSS(TAILWIND CSS) y JavaScript. Además, se utiliz
 El proyecto web se encuentra en el directorio `c:/Users/Eduardo/Desktop/proyecto web/` y se puede acceder a través de un navegador web. La estructura del proyecto se puede resumir en los siguientes archivos:
 
 - `index.html`: Es la página principal del proyecto web. Contiene la estructura básica de la página web y se encarga de cargar los archivos JavaScript y CSS necesarios.
-- `js/animations/Carrusel.js`: Es un archivo JavaScript que se encarga de crear una animación de carrusel en la página web. Esta animación se utiliza para mostrar las flores de los departamentos de Bolivar.
+- `js/animations/Carrusel.js`: Es un archivo JavaScript que se encarga de crear una animación de carrusel en la página web. Esta animación se utiliza para mostrar la flora del departamentos de Bolivar.
 - `js/buscador.js`: Es un archivo JavaScript que se encarga de realizar una búsqueda en los plantas del proyecto web. Esta búsqueda se realiza utilizando el método `getElementById` y el método `querySelectorAll`.
-- `images/`: Es un directorio que contiene las imágenes de las flores del proyecto web. Estas imágenes se utilizan en la página web para mostrar las flores de los departamentos de Bolivar.
+- `images/`: Es un directorio que contiene las imágenes de la flora del proyecto web. Estas imágenes se utilizan en la página web para mostrar las flores de los departamentos de Bolivar.
 - `pages/`: Es un directorio que contiene los archivos HTML de las páginas individuales del proyecto web. Estos archivos HTML se utilizan para mostrar las flores de los departamentos de Bolivar en diferentes páginas del proyecto web.
 
 ## Lenguajes de programación
